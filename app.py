@@ -8,7 +8,7 @@ from pytorch_lightning import seed_everything
 from omegaconf import OmegaConf
 from einops import rearrange
 from diffusers import DiffusionPipeline, EulerAncestralDiscreteScheduler
-
+import gradio as gr
 os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'expandable_segments:True'
 from src.utils.train_util import instantiate_from_config
 from src.utils.camera_util import (
